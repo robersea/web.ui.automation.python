@@ -1,0 +1,47 @@
+{
+  "Environments": {
+    "Test": {
+      "LoginUrl": "",
+      "Users": {
+        "TestUser1": {
+          "Username": "",
+          "Password": ""
+        },
+        "TestUser2": {
+          "Username": "",
+          "Password": ""
+        },
+        "TestUser3": {
+          "Username": "",
+          "Password": ""
+        }
+      }
+    },
+    "Stage": {
+      "LoginUrl": "",
+      "Users": {
+        "TestUser1": {
+          "Username": "",
+          "Password": ""
+        },
+         "TestUser2": {
+          "Username": "",
+          "Password": ""
+        },
+          "TestUser3": {
+          "Username": "",
+          "Password": ""
+        }
+      }
+    },
+    "Prod": {
+      "LoginUrl": "",
+      "Users": {
+        "TestUser1": {
+          "Username": "",
+          "Password": ""
+        }
+      }
+    }
+  }
+}
