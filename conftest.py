@@ -4,18 +4,22 @@ from playwright.sync_api import Playwright, Page
 
 
 # <editor-fold desc="Load Environments">
+
+# Use this to load environmental URLs and user login credentials
 @pytest.fixture(scope='session')
 def config():
-    with open('config.json') as config_file:
-        data = json.load(config_file)
+    with open('environments.json') as environments_file:
+        data = json.load(environments_file)
     return data
 # </editor-fold>
 
 # <editor-fold desc="Environment Selector">
+
+# Use this to dynamically pass in what environment you want your tests to run against.
 def pytest_addoption(parser):
     parser.addoption(
-        "--env", action="store", default="Tin",
-        help="Options: tin, bronze, drprod, demo, corp, prod"
+        "--env", action="store", default="Test",
+        help="Options: Test, Stage, Prod"
     )
 
 
