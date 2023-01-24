@@ -1,6 +1,6 @@
 import pytest
 import json
-from playwright.sync_api import Playwright, Page
+from pages.login_page import LoginPage
 
 
 # <editor-fold desc="Load Environments">
@@ -33,6 +33,8 @@ def env(request):
 def login(config, env, request, page):
     user_type = request.node.get_closest_marker("user_type").args[0]
     page.goto(config['Environments'][f'{env}']['LoginUrl'])
+    login = LoginPage(page)
+    login.login(config, env, user_type)
     yield
 
 # </editor-fold>
