@@ -1,19 +1,19 @@
 {
   "Environments": {
     "Test": {
-      "LoginUrl": "",
+      "LoginUrl": "https://www.saucedemo.com/",
       "Users": {
         "TestUser1": {
-          "Username": "",
-          "Password": ""
+          "Username": "standard_user",
+          "Password": "secret_sauce"
         },
         "TestUser2": {
-          "Username": "",
-          "Password": ""
+          "Username": "locked_out_user",
+          "Password": "secret_sauce"
         },
         "TestUser3": {
-          "Username": "",
-          "Password": ""
+          "Username": "problem_user",
+          "Password": "secret_sauce"
         }
       }
     },
